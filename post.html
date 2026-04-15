@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文章 | 我的博客</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html" class="site-title">我的博客</a>
+      <nav>
+        <a href="index.html">首页</a>
+      </nav>
+    </header>
+
+    <main>
+      <article id="post-content"></article>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 我的博客</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    initPost();
+  </script>
+</body>
+</html>
