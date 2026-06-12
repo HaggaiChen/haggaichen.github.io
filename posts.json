@@ -1,5 +1,12 @@
 [
   {
+    "id": "2026-06-12-0001",
+    "title": "winchain 响应头过大问题",
+    "date": "2026-06-12",
+    "tags": ["技术", "运维", "Nginx", "Kong"],
+    "summary": "排查 winchain 登录接口返回 502 的根因：上游 rememberMe Cookie 导致响应头超过 Nginx/Kong 默认 proxy_buffer_size，并给出 proxy_buffer_size、proxy_buffers、proxy_busy_buffers_size 三个参数的含义与配置方案。"
+  },
+  {
     "id": "2026-05-28-0003",
     "title": "WSL Ubuntu 迁移：系统盘到 D 盘",
     "date": "2026-05-28",
