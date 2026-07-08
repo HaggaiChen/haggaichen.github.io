@@ -15,7 +15,7 @@ permalinks:
 
 params:
   name: 'chenbowen'
-  bio: '一个爱折腾的个人博客'
+  bio: '个人博客'
   color: 'linen'
   rss: true
   mainSections:
