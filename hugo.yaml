@@ -1,0 +1,47 @@
+baseURL: 'https://haggaichen.github.io/'
+title: "chenbowen's blog"
+locale: 'zh-CN'
+defaultContentLanguage: 'zh-cn'
+author:
+  name: 'chenbowen'
+copyright: '© 2026 chenbowen'
+theme: 'paper'
+
+pagination:
+  pagerSize: 10
+
+permalinks:
+  posts: '/posts/:contentbasename/'
+
+params:
+  name: 'chenbowen'
+  bio: '一个爱折腾的个人博客'
+  color: 'linen'
+  rss: true
+  mainSections:
+    - posts
+
+menu:
+  main:
+    - identifier: 'home'
+      name: '首页'
+      url: '/'
+      weight: 10
+    - identifier: 'tags'
+      name: '标签'
+      url: '/tags/'
+      weight: 20
+    - identifier: 'about'
+      name: '关于'
+      url: '/about/'
+      weight: 30
+
+taxonomies:
+  tag: 'tags'
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
