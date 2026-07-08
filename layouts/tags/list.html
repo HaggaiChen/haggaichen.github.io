@@ -1,0 +1,17 @@
+{{- define "main" -}}
+
+<h1 class="mb-14">标签</h1>
+
+<div class="flex flex-wrap">
+  {{- range .Data.Terms.Alphabetical -}}
+  <a
+    class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+    href="{{- .Page.Permalink -}}"
+  >
+    {{- .Page.Title -}}
+    <span class="ml-1 text-xs opacity-60">({{- .Count -}})</span>
+  </a>
+  {{- end -}}
+</div>
+
+{{- end -}}
