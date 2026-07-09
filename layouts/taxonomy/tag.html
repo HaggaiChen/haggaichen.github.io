@@ -16,7 +16,7 @@
   {{- end -}}
   <h2 class="my-0!">{{- .Title -}}</h2>
   <time class="text-xs antialiased opacity-60"
-    >{{- .Date | time.Format ":date_medium" -}}</time
+    >{{- .Date | time.Format "2006-01-02" -}}</time
   >
   <a class="absolute inset-0 text-[0px]" href="{{- .Permalink -}}"
     >{{- .Title -}}</a
