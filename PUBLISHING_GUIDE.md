@@ -29,7 +29,7 @@ summary: ''
 | `title` | 是 | 文章标题 |
 | `date` | 是 | 发布日期，可写 `2026-07-08` 或完整 ISO 时间 |
 | `tags` | 否 | 标签数组，如 `[技术, 运维, Nginx]` |
-| `summary` | 否 | 列表页摘要 |
+| `summary` | 否 | 首页/列表页摘要，建议控制在 100 字以内 |
 | `draft` | 否 | `true` 为草稿，正式发布时改为 `false` 或删除 |
 
 完整示例：
@@ -95,5 +95,8 @@ git push origin main
 ## 7. 注意事项
 
 - 文件名决定 URL，发布后不要随意修改。
+- 首页通过 `layouts/index.html` 自定义渲染，按年份分组展示文章。
+- 文章详情页通过 `layouts/_default/single.html` 覆盖主题渲染。
+- 列表页通过 `layouts/_default/list.html` 覆盖主题渲染。
 - 标签页通过 `layouts/tags/list.html` 与 `layouts/taxonomy/tag.html` 自定义渲染。
 - 确保本地安装的是 Hugo Extended 版本。
